@@ -9,7 +9,7 @@ const Home = () => {
         <div className="hero">
           <h1>Welcome to Coffee Whispers</h1>
           <p>Step into the aroma — where every cup is brewed to whisper comfort and joy.</p>
-          <Link to="/about" className="cta-btn">Explore Our Menu</Link>
+          <Link to="/menu" className="cta-btn">Explore Our Menu</Link>
         </div>
       </div>
     </div>
