@@ -1,0 +1,106 @@
+/* ===================================
+   ULTRA-PROFESSIONAL REGISTER STYLES
+   =================================== */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-gradient);
+    padding: 2rem;
+}
+
+.register-container {
+    background: var(--bg-white);
+    padding: 3rem 4rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(139, 69, 19, 0.1);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.register-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+    color: var(--text-medium);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.register-input {
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(139, 69, 19, 0.15);
+    font-size: 1rem;
+    color: var(--text-dark);
+    transition: var(--transition-smooth);
+}
+
+.register-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.register-btn {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-sm);
+}
+
+.register-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.register-footer {
+    margin-top: 1.8rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.register-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
