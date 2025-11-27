@@ -136,6 +136,17 @@ const Contact = () => {
                 </div>
 
                 <div className="form-group">
+                  <input
+                    type="text"
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div className="form-group">
                   <textarea
                     name="message"
                     value={formData.message}
@@ -146,18 +157,9 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                
-                </div>
+
+
+
 
                 <button type="submit" className="submit-btn">
                   <SendIcon className="btn-icon" />
